@@ -15,7 +15,6 @@ def eap_name_from_code(type_number):
 
 conf.iface="mon0"
 output="Invalid"
-global type_number
 while (output=="Invalid"):
 	packets=sniff(iface="mon0",count=10, filter="wlan proto 0x888e",timeout=20)
 	#packets=rdpcap("/home/raiton/Bureau/captured_pcpap/cap")
